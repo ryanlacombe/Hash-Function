@@ -10,6 +10,9 @@
 ********************************************************************************************/
 
 #include "raylib.h"
+#include "HashFunction.h"
+#include <iostream>
+#include <iomanip>
 
 int main()
 {
@@ -21,6 +24,9 @@ int main()
 	InitWindow(screenWidth, screenHeight, "raylib [core] example - basic window");
 
 	SetTargetFPS(60);
+
+	unsigned int hasValue = HashFunction::defaultHash("Rain", 4);
+	std::cout << std::hex << hasValue << std::endl;
 	//--------------------------------------------------------------------------------------
 
 	// Main game loop
