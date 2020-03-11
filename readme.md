@@ -1,3 +1,4 @@
+Double click the raygame.exe program found in the main raygame-master folder to launch the program.
 
 ## License
 
