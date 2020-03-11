@@ -25,7 +25,9 @@ int main()
 
 	SetTargetFPS(60);
 
+	//Creates a has with the use of the current function set to default
 	unsigned int hasValue = HashFunction::defaultHash("Rain", 4);
+	//Outputs the Hash
 	std::cout << std::hex << hasValue << std::endl;
 	//--------------------------------------------------------------------------------------
 
